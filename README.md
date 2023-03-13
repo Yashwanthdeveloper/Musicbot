@@ -12,7 +12,7 @@ a discord bot with many commands , music , moderation etc
 
 **2.** Download this repo and unzip it | or git clone it
 
-**3.** Fill in everything in **`config/config.json`**
+**3.** Fill in everything in **`config/config.js`**
 
 **4.** after Fill everything in config Type in shall **`npm install`**
 
@@ -23,8 +23,8 @@ a discord bot with many commands , music , moderation etc
 
 ```javascript
 {
-  token: "BOT_TOKEN",
-  prefix: "BOT_PREFIX",
+  token: process.env.token || "BotToken",
+  prefix: process.env.prefix || "BotPrefix",
 }
 ```
 
